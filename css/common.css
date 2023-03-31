@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+body {
+  font-size: 15px;
+  /*文字の行間*/
+  line-height: 1.8;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 1px;
+  /*禁則事項をすべて解除。どの文字の間でも改行する*/
+  word-break: break-all;
+  color: #333;
+}
+
+a {
+  /*文字の装飾*/
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+li {
+  /*マーカーの設定（先頭の・など）*/
+  list-style: none;
+}
+
+.nav_all {
+  width: 100%;
+  /*スクロールしても固定表示*/
+  position: fixed;
+  background-color: #fff;
+  /*水平方向の距離 垂直方向の距離 ぼかし距離 広がり距離 影の色 inset*/
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 20%);
+}
+
+.nav_list {
+  /*横並び*/
+  display: flex;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+}
+
+.nav_item {
+  font-size: 18px;
+  /*余白 上下 左右*/
+  padding: 0 24px;
+}
+
+.nav_link {
+  /*指定した要素を内部に表示*/
+  display: inline-block;
+  /*余白 上下 左右*/
+  padding: 20px 0;
+  color: #333;
+}
+
+/*カーソルを合わせた際のプロパティ*/
+.nav_link:hover {
+  color: #75A9FF;
+}
+
+.top {
+  /*横並び*/
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  height: 700px;
+  background-color: #75A9FF;
+}
+
+.top_title {
+  font-size: 60px;
+  /*フォント 太字*/
+  font-weight: bold;
+  color: #fff;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 5px;
+}
+
+.top_subtitle {
+  font-size: 20px;
+  /*フォント 太字*/
+  font-weight: bold;
+  color: #fff;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 5px;
+}
+
+.section {
+  /*余白 上下 左右*/
+  padding: 120px 0;
+}
+
+/*疑似クラス化(奇数)*/
+.section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+
+.inner {
+  /*横幅の最大値*/
+  max-width: 1000px;
+  /*枠の外側の間隔 上下 左右 autoで中央*/
+  margin: 0 auto;
+  /*余白 上下 左右*/
+  padding: 0 40px;
+}
+
+.font1 {
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 5px;
+  color: #555;
+  /*枠の外側の間隔 下*/
+  margin-bottom: 60px;
+}
+
+.font2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.font3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.font4 {
+  width: 60%;
+  /*枠の外側の間隔 上下 左右 autoで中央*/
+  margin: 0 auto;
+}
+
+.myphoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_img {
+  /*要素の種類を指定 ブロック*/
+  display: block;
+  width: 40%;
+  /*枠の外側の間隔 上 左右 下*/
+  margin: 0 10px 30px;
+}
+
+.speechBubbles {
+  font-family: "Sawarabi Gothic";
+  padding: 10% 10% 20% 3%;
+  height: 100%;
+  background-image: url(../img/hukidasji.jpg);
+  background-size: 80% 40%;
+  background-position: top 30% left 10%;
+  background-repeat: no-repeat;
+}
+
+.skill_item {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  /*枠の外側の間隔 下*/
+  margin-bottom: 50px;
+}
+
+.skill_img {
+  margin-right: 20px;
+}
+
+.skill_img img {
+  width: 60px;
+}
+
+.work_all {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  /*単一行or折り返し 折り返し*/
+  flex-wrap: wrap;
+}
+
+.work_item {
+  /*アイテムの表示領域*/
+  flex: 100%;
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+  /* margin-right: 0%; */
+}
+
+.work_item a img {
+  width: 100%;
+}
+
+.work_body p {
+  /* text-align: center; */
+  /* font-size: 15px; */
+  font-weight: bold;
+  /* padding-bottom: 6px; */
+}
+
+.contact_list {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+}
+
+.contact_list li {
+  /*マーカーの設定（先頭の・など）*/
+  list-style: none;
+}
+
+.contact_item {
+  width: 60px;
+}
+
+.contact_mail {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bottom {
+  background-color: #333;
+}
+
+.bottom .inner {
+  padding: 30px;
+}
+
+.copyright {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
